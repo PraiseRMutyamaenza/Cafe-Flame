@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cafe Flame</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/fimages/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="f-top">
+  <div class="f-row f-padding f-black">
+    <div class="f-col s3">
+      <a href="#" class="f-button f-block f-black">HOME</a>
+    </div>
+    <div class="f-col s3">
+      <a href="#about" class="f-button f-block f-black">ABOUT</a>
+    </div>
+    <div class="f-col s3">
+      <a href="#menu" class="f-button f-block f-black">MENU</a>
+    </div>
+    <div class="f-col s3">
+      <a href="#where" class="f-button f-block f-black">WHERE</a>
+    </div>
+    <div class="f-col s3">
+        <a href="#where" class="f-button f-block f-black">ENQUIRIES</a>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg f-display-container f-grayscale-min" id="home">
+  <div class="f-display-bottomleft f-center f-padding-large f-hide-small">
+    <span class="f-tag">Open from 6am to 5pm</span>
+  </div>
+  <div class="f-display-middle f-center">
+    <span class="f-text-white" style="font-size:90px">Cafe<br>Flame</span>
+  </div>
+  <div class="f-display-bottomright f-center f-padding-large">
+    <span class="f-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="f-sand f-grayscale f-large">
+
+<!-- About Container -->
+<div class="f-container" id="about">
+  <div class="f-content" style="max-width:700px">
+    <h5 class="f-center f-padding-64"><span class="f-tag f-wide">ABOUT THE CAFE</span></h5>
+    <p>The Cafe was founded in MorningSide by Ms Greene whose father owned a coffee making company and her mother is known nation wide of a her famous bakeries.</p>
+    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+    <div class="f-panel f-leftbar f-light-grey">
+      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+      <p>Chef, Coffeeist and Owner: Kim Greene</p>
+    </div>
+    <img src="fimages/coffeeshop.jpg" style="width:100%;max-width:1000px" class="f-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 5am to 7pm.</p>
+    <p><strong>Address:</strong> 13 FarandWide ROAD, 234, NY</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="f-container" id="menu">
+  <div class="f-content" style="max-width:700px">
+ 
+    <h5 class="f-center f-padding-48"><span class="f-tag f-wide">THE MENU</span></h5>
+  
+    <div class="f-row f-center f-card f-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="f-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="f-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="f-container menu f-padding-48 w3-card">
+      <h5>Bread Basket</h5>
+      <p class="f-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h5>Honey Almond Granola with Fruits</h5>
+      <p class="f-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h5>Belgian Waffle</h5>
+      <p class="f-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h5>Scrambled eggs</h5>
+      <p class="f-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="f-text-grey">With syrup, butter and lots of berries 8.50</p>
+    </div>
+
+    <div id="Drinks" class="f-container menu f-padding-48 f-card">
+      <h5>Coffee</h5>
+      <p class="f-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="f-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="f-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="f-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="f-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="/fimages/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="f-container" id="where" style="padding-bottom:32px;">
+  <div class="f-content" style="max-width:700px">
+    <h5 class="f-center f-padding-48"><span class="f-tag f-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="/fimages/map.jpg" class="f-image" style="width:100%">
+    <p><span class="f-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="f-button f-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,
+                 initial-scale=1.0">
+  <title>Demo</title>
+  <style>
+      h1 {
+          color: green;
+      }
+      .container {
+          padding: 15px;
+          width: 400px;
+      }
+       
+      label,
+      input {
+          margin-bottom: 10px;
+      }
+       
+      button {
+          float: right;
+          margin-right: 10px;
+          background-color: green;
+      }
+  </style>
+</head>
+
+<body>
+  <left>
+      <h1>ENQUIRIES</h1>
+      
+      <br><br>
+      <div class="container">
+          <div>
+              <label>Name:</label>
+              <input type="text" size="40">
+          </div>
+          <div>
+              <label>Number:</label>
+              <input type="text"
+                     id="number" size="40">
+              <span id="error"></span>
+          </div>
+          <div>
+              <label>email:</label>
+              <input type="text" size="40">
+          </div>
+          <div>
+              <label>Enquiry:</label>
+              <input type="text" size="40">
+          </div>
+          <button type="submit"
+                  onclick="errorMessage()">
+              Submit
+          </button>
+      </div>
+  </left>
+</body>
+<script>
+  function errorMessage() {
+      var error = document.getElementById("error")
+      if (isNaN(document.getElementById("number").value))
+      {
+           
+          // Changing content and color of content
+          error.textContent = "Please enter a valid number"
+          error.style.color = "red"
+      } else {
+          error.textContent = ""
+      }
+  }
+</script>
+
+</html>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="f-center f-light-grey f-padding-48 f-large">
+
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" f-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " f-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
